@@ -1,8 +1,11 @@
 import React from 'react';
 
-import Card from '../components/Card';
+import Card from './Card';
 
 import augustino from '../assets/images/augustino.PNG';
+import weedster from '../assets/images/weedster.PNG';
+import trivia from '../assets/images/trivia.PNG';
+import directory from '../assets/images/directory.PNG';
 import notes from '../assets/images/notes.PNG';
 import masters from '../assets/images/masters.PNG';
 import Container from 'react-bootstrap/Container';
@@ -24,6 +27,28 @@ class Carousel extends React.Component {
         },
         {
           id:1,
+          title: "Weedster",
+          subtitle: "A forum about weed",
+          imgSrc: weedster,
+          link: "http://weedster.herokuapp.com/feature",
+          selected: false,
+        },        {
+          id:2,
+          title: "weedster2.0",
+          subtitle: "an improved forum about weed",
+          imgSrc: weedster,
+          link: "https://newweedster.herokuapp.com/",
+          selected: false,
+        },        {
+          id:3,
+          title: "Trivia app",
+          subtitle: "A trivia game",
+          imgSrc: trivia,
+          link: "https://marcos-cmd.github.io/Project1-Trivia-App/",
+          selected: false,
+        },
+        {
+          id:4,
           title: "Vessel Masters",
           subtitle: "A site for professional mariners",
           imgSrc: masters,
@@ -31,8 +56,16 @@ class Carousel extends React.Component {
           selected: false,
         },
         {
-          id:2,
-          title: "Augustino\'s Profile",
+          id:5,
+          title: "Employee Directory",
+          subtitle: "Phone, email list and birthday",
+          imgSrc: directory,
+          link: "https://aprzygocki.github.io/Employee_Directory/",
+          selected: false,
+        },
+        { 
+          id:6,
+          title: "Augustino's Profile",
           subtitle: "gateway into the mind",
           imgSrc: augustino,
           link: "https://augustino.us",
